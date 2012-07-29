@@ -1,4 +1,8 @@
 Bookworm::Application.routes.draw do
+
+  get "books/new"
+
+	resources :books
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

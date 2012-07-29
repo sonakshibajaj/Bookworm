@@ -1,0 +1,24 @@
+<h1>Create a new book</h1>
+
+<%= form_for(@book) do |f| %>
+	
+	<%= render 'shared/error_messages' %>
+	
+	<%= f.label :name %><br/>
+	<%= f.text_field :name %><br/>
+	
+	<%= f.label :description %><br/>
+	<%= f.text_field :description %><br/>
+	
+	<%= f.label :author %><br/>
+	<%= f.text_field :author %><br/>
+	
+	<%= f.label :ISBN , "ISBN" %><br/>
+	<%= f.text_field :ISBN %><br/>
+	
+	<%= f.label :cost %><br/>
+	<%= f.text_field :cost %><br/>
+	
+	<%= f.submit "Create book" %>
+	
+<% end %>

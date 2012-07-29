@@ -1,0 +1,6 @@
+Name: <%= @book.name %><br/>
+Description: <%= @book.description %><br/>
+Author: <%= @book.author %><br/>
+ISBN: <%= @book.ISBN %><br/>
+Status: <% if @book.checked_in %> Checked in <% else %> Checked out  %> <% end %><br/>
+Cost: <%= @book.cost %><br/>

@@ -1,0 +1,14 @@
+<% if @book.errors.any? %>
+The form contains <%= pluralize(@book.errors.count, "error") %>.
+
+<ul>
+
+<% @book.errors.full_messages.each do |msg| %>
+	<li> <%= msg %></li>
+<% end %>
+
+</ul>
+
+<% end %>
+
+
